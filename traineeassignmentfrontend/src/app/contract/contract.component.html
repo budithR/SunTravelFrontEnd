@@ -1,0 +1,30 @@
+<h3>All contracts</h3>
+<div class="container">
+  <div *ngIf="contracts.length > 0" class="contractDiv">
+    <div *ngFor="let contract of contracts"  class="contractDiv">
+        <div class=box1 id="resultDiv">
+            <div class="details">
+              <div class="firstRow">
+                <div class="hotelName">{{contract.hotel.hotelName}}</div>
+                <div class="price">Rs. {{contract.roomType.pricePerPerson}} per person</div>
+                <div class="roomTypeName">Room Type - {{contract.roomType.roomTypeName}}</div>
+                <div class="maxAdults">Max Adulst - {{contract.roomType.maxAdults}}</div>
+              </div>
+              <div class="secondRow">
+                
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+          
+  
+  <div *ngIf="contracts.length === 0" class="contractDiv" >
+    <div class=box1 id="resultDiv">
+        <div class="details">
+          <div class="sorryStatemant">Sorry No Contracts Available</div>
+        </div>
+    </div>
+  </div> 
+</div>
+      

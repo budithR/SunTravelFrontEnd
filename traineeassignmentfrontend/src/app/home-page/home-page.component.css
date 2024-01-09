@@ -1,0 +1,31 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    
+}
+.welcomeText{
+    color: white;
+}
+
+.welcomeText h2{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.welcomeText p{
+    color: white;
+    font-size: 20px;
+}
+
+.image{
+    padding-top: 120px;
+}

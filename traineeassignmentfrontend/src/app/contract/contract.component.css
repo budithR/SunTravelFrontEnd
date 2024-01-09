@@ -1,0 +1,112 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h3{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  color: whitesmoke;
+  font-size: 35px;
+  font-weight: 500;
+  
+}
+.contractDiv{
+  
+  display: flex;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* result div css start */
+#resultDiv {
+  height: 160px;
+  width: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  border-radius: 10px;
+  color: aliceblue;
+  transition: all ease 0.2s;
+  border: 1px solid #505050;
+  background: linear-gradient(0deg,#000000e3,#585858ea);
+  box-shadow: 0px 5px 10px 0px rgba(0, 32, 70, 0.7); 
+
+  }
+  .box1 {
+    box-shadow: 0px 5px 10px 0px rgba(0, 32, 70, 0.7);            
+  }
+  .box2{
+    box-shadow: inset 0px 5px 10px 0px rgba(0, 32, 70, 0.7);
+  }
+  .box1:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px 2px rgba(0, 32, 70, 0.7);
+  }
+  .box2:hover{
+    transform: translateY(5px);
+    box-shadow: inset 0px 10px 20px 2px rgba(0, 32, 70, 0.7);
+  }
+
+.details{
+    padding: 20px;
+    padding-top: 10px;
+}
+
+.hotelName{
+    font-size: 30px;
+    font-weight: 700;
+    background-image: linear-gradient(to left, #0054c2, #00aeff);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.price{
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+.firstRow{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.roomTypeName{
+    font-size: 15px;
+    font-weight: 400;
+
+}
+.maxAdults{
+    font-size: 15px;
+    font-weight: 400;
+    
+}
+
+.sorryStatemant{
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+    font-size: 30px;
+    font-weight: 600;
+    background-image: linear-gradient(to left, #c20000, #ca6434);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+/* result div css end */

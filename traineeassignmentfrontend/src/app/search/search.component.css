@@ -1,0 +1,152 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+.container{
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-bottom: 20px;
+    width: 800px;
+    display: flex;
+    background: #10c6f3;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+    color: aliceblue;
+    transition: all ease 0.2s;
+    border: 1px solid #313030;
+    background: linear-gradient(45deg,#000000e3,#0040a0ea);
+    box-shadow: 0px 5px 10px 0px rgba(0, 32, 70, 0.7);  
+    
+}
+.rowRoom{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+#deleteButton{
+    background-color: rgb(250, 69, 69);
+    border-color: rgb(240, 66, 66);
+    color: white;
+    
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+#twoButtons{
+    padding: 15px;
+    gap: 10px;
+}
+
+/* available hotels Start */
+
+.availableHotels{
+    padding: 40px;
+    display: flex;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.availableHotel{
+    padding: 30px;
+    height: 350px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    color: aliceblue;
+    transition: all ease 0.2s;
+    border: 1px solid #505050;
+    background: linear-gradient(0deg,#000000e3,#585858ea);
+    box-shadow: 0px 5px 10px 0px rgba(0, 32, 70, 0.7);  
+}
+.leftAndRight{
+    padding-top: 10px;
+    display: flex;
+    gap: 30px;
+}
+h1{
+    font-size: 40px;
+    font-weight: 600;
+    background-image: linear-gradient(to left, #1f8294, #00d9ff);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.left{
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: column;
+    
+    font-weight: 400;
+    font-size: 15px;
+}
+#priceLabel{
+    font-weight: 700;
+    font-size: 15px;
+}
+#price{
+    font-size: 25px;
+    font-weight: 700;
+    color: #32a3ff;
+}
+.bottom{
+    padding-top: 10px;
+}
+h3{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    font-size: 35px;
+    font-weight: 500;
+    color: whitesmoke;
+    
+}
+#available{
+    padding-top: 10px;
+    color: rgb(142, 255, 37);
+    
+}
+#available i{
+    border-radius: 50%;
+    border: 2px solid rgb(142, 255, 37);
+}
+
+#notAvailable{
+    padding-top: 10px;
+    color: rgb(255, 0, 0);
+    
+}
+#notAvailable i{
+    border-radius: 50%;
+    border: 2px solid rgb(255, 0, 0);
+}
+
+#notAvailableText{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    background-image: linear-gradient(to left, #631903, #ff1b1b);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.notAvailableHotels{
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

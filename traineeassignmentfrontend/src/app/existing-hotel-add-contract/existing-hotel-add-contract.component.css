@@ -1,0 +1,159 @@
+
+.outterFormDiv{
+    display: flex;
+    justify-content: center;
+    
+}
+h4{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    color: whitesmoke;
+    font-size: 35px;
+    font-weight: 500;
+    
+}
+.formContainer{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    background: #10c6f3;
+    border-radius: 5px;
+    color: aliceblue;
+    transition: all ease 0.2s;
+    border: 1px solid #313030;
+    background: linear-gradient(45deg,#000000e3,#0040a0ea);
+    box-shadow: 0px 5px 10px 0px rgba(0, 32, 70, 0.7);    
+
+}
+
+
+.add-contract-form{
+    margin: 20px;
+    
+}
+.row{
+    margin-bottom: 20px;
+}
+.btn btn-primary{
+    margin-top: 20px;
+}
+
+#top2rows{
+   
+    padding-left: 15px;
+}
+#fromButtons{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#displayContractAddStatus{
+    color: rgb(93, 207, 93);
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+#formUpper{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+#newButton{
+    background-color: rgb(250, 69, 69);
+    border-color: rgb(240, 66, 66);
+}
+.form-group{
+    padding-left: 15px;
+}
+
+.selectAndButton{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+#selectHotelID{
+    width: 305px;
+}
+
+/* result div css start */
+
+.bottomDiv{
+    display: flex;
+    justify-content: center;
+
+}
+
+#resultDiv {
+    margin-top: 50px;
+    height: 150px;
+    width: 1000px;
+    background: #10c6f3;
+    border-radius: 10px;
+    color: aliceblue;
+    transition: all ease 0.2s;
+    border: 1px solid #313030;
+    background: linear-gradient(45deg,#26323fe3,#000205ea);
+
+  }
+  .box1 {
+    box-shadow: 0px 5px 10px 0px rgba(0, 32, 70, 0.7);            
+  }
+  .box2{
+    box-shadow: inset 0px 5px 10px 0px rgba(0, 32, 70, 0.7);
+  }
+  .box1:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px 2px rgba(0, 32, 70, 0.7);
+  }
+  .box2:hover{
+    transform: translateY(5px);
+    box-shadow: inset 0px 10px 20px 2px rgba(0, 32, 70, 0.7);
+  }
+
+.details{
+    padding: 20px;
+    padding-top: 10px;
+}
+
+.hotelName{
+    font-size: 50px;
+    font-weight: 600;
+    background-image: linear-gradient(to left, #0054c2, #00aeff);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.price{
+    font-size: 25px;
+    font-weight: 400;
+    padding-top: 30px;
+}
+
+.firstRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.secondRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.roomTypeName{
+    font-size: 30px;
+    font-weight: 600;
+
+}
+.maxAdults{
+    font-size: 25px;
+    font-weight: 400;
+    padding-top: 5px;
+}
+/* result div css end */

@@ -1,0 +1,81 @@
+
+<h3>Search Form</h3>
+<div class="container">
+    <form action="" #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+
+        <div class="firstRow" >
+            <div class="row">
+                <div class="col-sm-5">
+                    <label for="checkingDate" class="col-sm-10 col-form-label">Checking Date</label>
+                    <input type="date" ngModel name="checkingDate" class="form-control" id="inputEndDate" placeholder="15" required >
+                </div>
+                <div class="col-sm-5">
+                    <label for="noOfNights" class="col-sm-10 col-form-label">No of nights</label>
+                    <input type="number" ngModel name="noOfNights"  class="form-control" placeholder="1" required>
+                </div>
+            </div>
+    
+            
+        </div>
+    
+        <!-- Render the existing form controls here -->
+    
+        <div class="rowRoom">
+            <label class="col-sm-2 col-form-label">{{ formElements[0].label }}</label>
+            <input class="col-sm-3 form-control" type="number" name="{{ formElements[0].controlName }}" placeholder="No of adults" [(ngModel)]="formData[formElements[0].controlName]" />
+        </div>
+        <!-- Render the dynamic form elements -->
+        <div class="rowRoom" *ngFor="let element of formElements.slice(1); let i = index">
+            <label class="col-sm-2 col-form-label">{{ element.label }}</label>
+            <input class="col-sm-3 form-control" type="number" name="{{ element.controlName }}" placeholder="No of adults" [(ngModel)]="formData[element.controlName]" />
+            <button type="button" class="btn btn-primary" (click)="removeFormField(i + 1)" id="deleteButton"><i class="fa fa-trash"></i></button>
+        </div>
+        
+        <div class="row" id="twoButtons">
+            <!-- Button to add a new form element -->
+            <button type="button" class="btn btn-primary add" (click)="addFormField('Room', 'noOfAdults')">Add Room</button>
+            
+            <!-- Button to submit the form -->
+            <button type="submit" class="btn btn-primary" ><i class="fa fa-search"></i> Search</button>
+        </div>
+        
+        
+             
+        
+    </form>
+</div>
+<div class="availableHotels" *ngIf="contractOutArray.length > 0" >
+
+    <div class="availableHotel"  *ngFor="let contractOut of contractOutArray">
+        <p id="available"><i class="fa fa-check"></i>  Available</p>
+        <h1>{{contractOut.hotelName}}</h1>
+    
+        <div class="leftAndRight">
+            <div class="left" >
+                <p *ngFor="let roomType of contractOut.roomTypeOut">{{roomType.roomTypeName}} - Rs. {{roomType.price}}</p>
+                
+                
+            </div>
+            
+            <div class="right">
+                <P id="priceLabel">Total Price</P>
+                <p id="price">Rs. {{contractOut.totalPrice}}</p>
+            </div>
+        </div>
+        <div class="bottom">
+            <p>Checking Date - {{checkingDate}}</p>
+                <p>For {{noOfNights}} nights</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="notAvailableHotels" *ngIf="contractOutArray.length == 0 && showNotAvailableContent == true" >
+
+    <div class="availableHotel">
+        <p id="notAvailable"><i class="fa fa-close"></i> Not Available</p>
+        <h2 id="notAvailableText">Sorry no contracts available for your serach</h2>
+    
+        
+    </div>
+</div>
